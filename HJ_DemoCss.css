@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  *
- * @package         Demo Css
+ * @package         HJ_DemoCss
  * @author          Hoyt Jolly
  * @license         https://opensource.org/licenses/MIT	
  * @link	
@@ -38,7 +38,7 @@
  * To enable the css, put the .demo-css class in your <body> tag
  *
  * @author		Hoyt Jolly
- * @link		https://github.com/hoytman/uniqueCharacterString
+ * @link		https://github.com/hoytman/HJ_DemoCss
  */
 
 body.demo-css div.demo{display:inline !important; padding: 1px 1%; margin: 20px;}

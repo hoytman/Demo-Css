@@ -41,8 +41,25 @@
  * @link		https://github.com/hoytman/HJ_DemoCss
  */
 
-body.demo-css div.demo{display:inline !important; padding: 1px 1%; margin: 20px;}
-body.demo-css div.demo div.demo{margin: 0px;}
+body.demo-css div.demo-line{
+    display:inline !important; 
+    padding: 1px 1%; 
+
+}
+
+body.demo-css div.demo div.demo-line{margin: 0px;}
+
+body.demo-css div.demo-horizontal{
+    display:inline-block !important; 
+    padding: 3px 9px;
+    margin: 3px 3px;
+    min-width:10px;
+}
+
+body.demo-css div.demo-vertical{
+    display:inline-block !important; 
+    padding: 6px 6px; 
+}
 
 body.demo-css *:nth-child(odd) {outline:1px dashed #444;}
 body.demo-css *:nth-child(even) {outline:1px solid #d11;}
@@ -87,15 +104,47 @@ body.demo-css * * * * * * * * * * * * * * * * * * * * * * * * * * * {background-
 
 /*
  
+<?php
+    
+    for($i = 1; $i <= 27; $i++){
+        echo "<div style='display:none' class='demo-line'>$i".PHP_EOL;
+    }
+    for($i = 1; $i <= 27; $i++){
+        echo "</div>".PHP_EOL;
+    }
+
+?>
+      
+
     <?php
 
         for($i = 1; $i <= 27; $i++){
-           echo "<div style='display:none' class='demo'>$i&nbsp;";
+            echo "<div style='display:none' class='demo-horizontal'>$i".PHP_EOL;
         }
-        for($i = 1; $i < 27; $i++){
-           echo "</div>";
+        for($i = 1; $i <= 27; $i++){
+            echo "</div>".PHP_EOL;
         }
 
     ?>
+      
+
+ 
+    <?php
+
+        for($i = 1; $i <= 27; $i++){
+            echo "<div style='display:none' class='demo-vertical'>$i".PHP_EOL;
+            for($j = 0; $j < 4; $j++){
+                echo "<div class='demo-horizontal'>hello</div>".PHP_EOL;
+            }
+            echo "<br /><br />".PHP_EOL;
+        }
+
+        for($i = 1; $i <= 27; $i++){
+            echo "</div>".PHP_EOL;
+        }
+
+    ?>
+      
+
       
 */
